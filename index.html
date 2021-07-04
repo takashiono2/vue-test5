@@ -8,7 +8,21 @@
   <title>NinjaCode</title>
 </head>
 <body>
+  <div id="app">
+    <div>
+      <ul>
+        <li v-for="job in jobs" :key="job.key">
+          {{ job.name }}
+        </li>
+      </ul>
+    </div>
+    <form v-on:submit.prevent="addJob">
+      <input type="text" v-model="newJobName">
+      <input type="submit" value="タスクを完了する">
+    </form>
+  </div>
 
+  <!-- 中級.03
   <div id="app">
     <p>{{ checked }}</p>
     <input type="checkbox" v-model="checked">
@@ -19,7 +33,7 @@
     <input type="checkbox" id="two" value="2" v-model="selectedValues">
     <label for="three">3</label>
     <input type="checkbox" id="three" value="3" v-model="selectedValues">
-  </div>
+  </div> -->
 
   <!-- 中級.02
   <div id="app">
