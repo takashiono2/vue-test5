@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
   <title>NinjaCode</title>
 </head>
 <body>
+  <div id="app">
+    <div v-if="show">
+        <p class="text text-success">NinjaCODE 楽しい!!</p>
+    </div>
+    <div v-else="">
+        <p class="text text-danger">NinjaCODE 難しい....</p>
+    </div>
+  </div>
   
+
+  <!-- No.03
+  <div id="app">
+    <div v-bind:class="{active: isActive}">
+        Active!!
+    </div>
+  </div> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
