@@ -9,11 +9,16 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ greet }}</p>
-    <button v-on:click="reverseText">文字が反対になるよ!</button>
+    <p>{{ count }}</p>
+    <button class="up" v-on:click="countUp">
+      プラス
+    </button>
+    <button class="down" v-on:click="countDown">
+      マイナス
+    </button>
   </div>
 
-  <!-- No.09
+  <!-- 初級No.09
   <div id="app">
     <p>{{ greet }}</p>
     <button v-on:click="reverseText">文字が反対になるよ!</button>

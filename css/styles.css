@@ -1,3 +1,22 @@
+  p {
+    font-size:30px;
+    font-weight: bold;
+  }
+  button {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  button.up {
+    background: #40b983;
+    border: none;
+  }
+  button.down {
+    background: red;
+    border: none;
+  }
+  
+/* 初級.07
 .alert_btn {
   width: 30%;
   padding: 1rem;
@@ -5,7 +24,7 @@
   color: #ffffff;
   background: #40b983;
   font-weight: bold;
-}
+} */
 
 /* No.06
 .text-card {

@@ -1,16 +1,19 @@
 var app = new Vue({
   el: '#app',
   data: {
-    greet: 'Hello,ninjacode!'
+    count: 0
   },
   methods: {
-    reverseText: function() {
-      this.greet = this.greet.split("").reverse().join("");
+    countUp: function() {
+      this.count ++;
+    },
+    countDown: function(){
+      this.count --;
     }
   }
 });
 
-// No.09
+// 初級No.09
 // var app = new Vue({
 //   el: '#app',
 //   data: {
