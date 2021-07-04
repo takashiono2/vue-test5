@@ -1,17 +1,38 @@
 var app = new Vue({
   el: '#app',
   data: {
-    count: 0
-  },
-  methods: {
-    countUp: function() {
-      this.count ++;
-    },
-    countDown: function(){
-      this.count --;
-    }
+    checked: false,
+    selectedValues: [
+      // { 1: false },
+      // { 2: false },
+      // { 3: false }
+    ],
   }
 });
+
+// 中級.02
+// var app = new Vue({
+//   el: '#app',
+//   data: {
+//     message: ''
+//   }
+// });
+
+// 中級.01
+// var app = new Vue({
+//   el: '#app',
+//   data: {
+//     count: 0
+//   },
+//   methods: {
+//     countUp: function() {
+//       this.count ++;
+//     },
+//     countDown: function(){
+//       this.count --;
+//     }
+//   }
+// });
 
 // 初級No.09
 // var app = new Vue({
