@@ -1,3 +1,13 @@
+.alert_btn {
+  width: 30%;
+  padding: 1rem;
+  margin: 1rem auto;
+  color: #ffffff;
+  background: #40b983;
+  font-weight: bold;
+}
+
+/* No.06
 .text-card {
   width: 50%;
   margin: 30% auto;
@@ -8,7 +18,7 @@
 .text-card p:nth-child(1) {
   font-weight: bold;
   font-size: 2rem;
-}
+} */
 
 /* No.04
 .text {
