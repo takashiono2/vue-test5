@@ -1,3 +1,16 @@
+.text-card {
+  width: 50%;
+  margin: 30% auto;
+  padding: 2rem;
+  background: #40b983;
+  color: #ffffff;
+}
+.text-card p:nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* No.04
 .text {
   margin: 30% auto;
   font-size: 2rem;
@@ -10,7 +23,7 @@
 }
 .text-danger {
   color: #F1936E;
-}
+} */
 
 /* No.03
 .active {

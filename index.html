@@ -8,6 +8,23 @@
   <title>NinjaCode</title>
 </head>
 <body>
+  
+  <div id="app" class="text-card">
+    <div v-if="random == 'fun'">
+      <p>NinjaCodeはすごく楽しい!</p>
+      <p>楽しく学べるプログラミング</p>
+    </div>
+    <div v-else-if="random == 'lazy'">
+      <p>NinjaCODEは退屈だ</p>
+      <p>非常に退屈だ...</p>
+    </div>
+    <div v-else="">
+      <p>NinjaCODE 難しい</p>
+      <p>難しいなあ</p>
+    </div>
+  </div>
+
+  <!-- No.04
   <div id="app">
     <div v-if="show">
         <p class="text text-success">NinjaCODE 楽しい!!</p>
@@ -15,9 +32,8 @@
     <div v-else="">
         <p class="text text-danger">NinjaCODE 難しい....</p>
     </div>
-  </div>
+  </div> -->
   
-
   <!-- No.03
   <div id="app">
     <div v-bind:class="{active: isActive}">
