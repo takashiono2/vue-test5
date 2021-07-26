@@ -1,31 +1,29 @@
-var app = new Vue({
-  el: '#app',
-  data: {
-    newJobName:'',
-    jobs: [
-      { name: "Engineer" },
-      { name: "Programmer" },
-      { name: "DataAnalyst" }
-    ],
-  },
-  methods: {
-    addJob(){
-      this.jobs.push({ name: this.newJobName });
-      this.newJobName = '';
-    }
-  }
-});
+
+// 中級.04
+// var app = new Vue({
+//   el: '#app',
+//   data: {
+//     newJobName:'',
+//     jobs: [
+//       { name: "Engineer" },
+//       { name: "Programmer" },
+//       { name: "DataAnalyst" }
+//     ],
+//   },
+//   methods: {
+//     addJob(){
+//       this.jobs.push({ name: this.newJobName });
+//       this.newJobName = '';
+//     }
+//   }
+// });
 
 // 中級.03
 // var app = new Vue({
 //   el: '#app',
 //   data: {
 //     checked: false,
-//     selectedValues: [
-//       // { 1: false },
-//       // { 2: false },
-//       // { 3: false }
-//     ],
+//     selectedValues: [],
 //   }
 // });
 
