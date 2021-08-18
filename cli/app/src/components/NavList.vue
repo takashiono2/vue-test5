@@ -9,7 +9,8 @@
     </nav>
   </div>
 </template>
-<style>
+
+<style scoped>
   .nav-list-wrapper {
     padding: 10px;
   }
