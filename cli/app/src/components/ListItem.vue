@@ -1,13 +1,20 @@
 <template>
   <div>
-    <li class="list-item">{{ dream.name }}</li>
+    <transition name="slide-fade">
+      <li v-if="show" @click="show = !show" class="list-item">{{ dream.name }}</li>
+    </transition>
   </div>
 </template>
 
 <script>
-  export default{
+  export default {
+    data(){
+      return {
+        show: true
+      }
+    },
     props:{
-      dream:{
+      dream: {
         type: Object
       }
     }
@@ -25,10 +32,22 @@
     border-top:  1px solid #40b983;
     border-right: 1px solid #40b983;
     font-weight: 700;
+    cursor: pointer;
   }
   .list-item:hover {
     background: #40b983;
     opacity: .8;
     color: #fff;
+  }
+  
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(500px);
+    opacity: 0;
   }
 </style>
