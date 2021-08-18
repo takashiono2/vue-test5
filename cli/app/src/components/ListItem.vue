@@ -5,13 +5,13 @@
 </template>
 
 <script>
-export default {
-  props: {
-    dream: {
-      type: Object,
+  export default{
+    props:{
+      dream:{
+        type: Object
+      }
     }
   }
-}
 </script>
 
 <style>

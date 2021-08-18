@@ -3,16 +3,15 @@
     <List></List>
   </div>
 </template>
-
 <script>
-import List from './List'
-  export default {
+  import List from "./List"
+  
+  export default{
     components: {
       List
     }
   }
 </script>
-
 <style>
   .main-container {
     width: 80%;
